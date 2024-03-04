@@ -1,13 +1,13 @@
 # HTML
 In the first code I have used the tags like 
-1. <a> anchor tag
-2. <header></header> header tag
-3. <nav> </nav> navigation tag
-4. <li></li> list tag
-5. <ol></ol> ordered list
-6. <ul></ul> unordered list
-7. <image> image tag
-8. <button> 
+1. Anchor tag
+2. Header tag
+3. Navigation tag
+4. list tag
+5. ordered list
+6. unordered list
+7. image tag
+8. button tag
 by using all these tags i have created the simple index. html file
 # PART B
 In part B I have created a web page for a engineering college including 

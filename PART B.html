@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Column Layout</title>
+    <style>
+        /* CSS for styling the page */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #00FF00; /* Changed background color */
+            font-size: 16px; /* Changed font size */
+        }
+        header {
+            background-color: #330099;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            display: flex;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow-x: auto; /* Enable horizontal scrolling if needed */
+        }
+        .column {
+            flex: 1;
+            background-color: #fff; /* Changed background color */
+            padding: 20px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-right: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Added box shadow */
+        }
+        /* Clearfix to prevent margin collapsing */
+        .container::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        /* Responsive layout */
+        @media screen and (max-width: 768px) {
+            .container {
+                /* No need to specify flex-direction for horizontal layout */
+                align-items: stretch;
+            }
+            .column {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EAST WEST INSTITUTE OF TECHNOLOGY</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <p>East West Institute of Technology was established in 2001 and is affiliated to  Visvesvaraya Technological University, Belgaum. The Institute is approved by AICTE and accredited by NBA and NAAC. The Institute is famous for engineering as well as management courses and offers UG, PG and PhD programmes in numerous specializations. Admissions in these courses are based on entrance examinations.</p>
+    <div class="container">
+        <div class="column">
+            <h2>Engineering</h2>
+            <p>CSE</p>
+            <p>ISE</p>
+            <p>ECE</p>
+            <p>EEE</p>
+            <p>CIVIL</p>
+            <p>AIML</p>
+            <p>MECHANICAL</p>
+        </div>
+        <div class="column">
+            <h2>PHARMACY</h2>
+            <p>B-PHARMA</p>
+            <p>D-PHARMA</p>
+            <p>PHARMA-D</p>
+        </div>
+        <div class="column">
+            <h2>PUC</h2>
+            <p>PCMB</p>
+            <p>PCMC</p>
+            <p>PCME</p>
+            <p>CEBA</p>
+            <p>HEBA</p>
+            <p>SEBA</p>
+        </div>
+    </div>
+</body>
+</html>
+
